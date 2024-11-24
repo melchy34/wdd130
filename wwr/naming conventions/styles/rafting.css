@@ -1,0 +1,145 @@
+/* Define color variables */
+:root {
+    --primary-color: #0099cc; /* Blue for primary actions */
+    --secondary-color: #ff6600; /* Orange for accents */
+    --background-color: #f4f4f4; /* Light grey for background */
+    --text-color: #333; /* Dark grey for text */
+    --footer-bg: #222; /* Dark background for footer */
+  }
+  
+  /* General styling for body */
+  body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: var(--background-color);
+    color: var(--text-color);
+  }
+  
+  /* Styling for the header */
+  .site-header {
+    background-color: var(--primary-color);
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .site-header .logo img {
+    max-height: 50px; /* Adjust logo size */
+  }
+  
+  .main-nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+  }
+  
+  .main-nav a {
+    text-decoration: none;
+    color: white;
+    font-weight: 700;
+  }
+  
+  .main-nav a:hover {
+    color: var(--secondary-color);
+  }
+  
+  /* Hero Section */
+  .hero {
+    position: relative;
+    background-color: #333;
+    height: 400px;
+    overflow: hidden;
+  }
+  
+  .hero-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .hero h1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-family: 'Rock Salt', cursive;
+    font-size: 3em;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.6);
+  }
+  
+  /* Styling for the About Article */
+  .about-us img {
+    width: 150px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+  }
+  
+  .about-us p {
+    font-family: 'Quicksand', sans-serif;
+    font-size: 1.2em;
+    line-height: 1.5;
+    color: var(--text-color);
+    max-width: 700px;
+    margin: 0 auto;
+    text-align: center;
+  }
+  
+  /* Styling for the History Section */
+  .history h2 {
+    font-family: 'Rock Salt', cursive;
+    color: var(--primary-color);
+  }
+  
+  .history p {
+    font-family: 'Roboto', sans-serif;
+    color: var(--text-color);
+    font-size: 1.1em;
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  /* Styling for the Adventure Section */
+  .adventure h2 {
+    font-family: 'Rock Salt', cursive;
+    color: var(--primary-color);
+    text-align: center;
+  }
+  
+  .rafting-images img {
+    width: 100%;
+    max-width: 300px;
+    margin: 10px;
+    border-radius: 8px;
+  }
+  
+  /* Footer Styling */
+  .site-footer {
+    background-color: var(--footer-bg);
+    color: white;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .site-footer .social-media a {
+    margin: 0 10px;
+  }
+  
+  .site-footer .social-media img {
+    width: 30px;
+    height: auto;
+    transition: opacity 0.3s;
+  }
+  
+  .site-footer .social-media a:hover img {
+    opacity: 0.7;
+  }
+  
+  /* Remove underlines from social media links */
+  .site-footer .social-media a {
+    text-decoration: none;
+  }
+  
