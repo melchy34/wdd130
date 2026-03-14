@@ -1,24 +1,37 @@
-body {
-    font-family: Arial, Helvetica, sans-serif;
+/* Navigation bar */
+nav {
+    background-color: #333;
+    padding: 10px;
 }
 
-/* limit main width */
+/* Navigation links */
+nav a {
+    color: rgb(39, 18, 231);
+    padding: 10px;
+    display: block;
+    text-decoration: none;
+}
+
+/* Main section */
 main {
     max-width: 800px;
 }
 
-/* profile image styling */
+/* Heading */
+h1 {
+    color: #090a0a;
+}
+
+/* Profile image inside main */
 main img {
     width: 200px;
     height: auto;
+    border: 1px solid #333;
+    padding: 5px;
+    box-shadow: 0 0 10px gray;
 }
 
-/* paragraph spacing */
-p {
-    padding: 0;
-}
-
-/* aside styling */
+/* Aside section */
 aside {
     width: 300px;
     margin: 20px;
@@ -28,13 +41,18 @@ aside {
     color: #333;
 }
 
-/* image inside aside */
+/* Image inside aside */
 aside img {
     width: 200px;
     height: auto;
 }
 
-/* footer styling */
+/* Paragraph */
+p {
+    padding: 0;
+}
+
+/* Footer */
 footer {
     margin-top: 20px;
     border-top: 2px solid #333;
