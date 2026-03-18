@@ -1,3 +1,10 @@
+/* Universal Selector */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 /* Navigation bar */
 nav {
     background-color: #ffffff;
@@ -31,6 +38,25 @@ main img {
     box-shadow: 0 0 10px gray;
 }
 
+main img {
+    float: right;
+    margin-left: 1rem;
+    /* adds space between image and paragraph */
+    margin-bottom: 1rem;
+}
+
+/* Class Selectors */
+.box {
+    margin: 1rem;
+    padding: 1rem;
+    border: 1px solid #333;
+    /* you can change color */
+    background-color: #f0f0f0;
+    /* choose your own background */
+    color: #222;
+    /* choose your own text color */
+}
+
 /* Aside section */
 aside {
     width: 300px;
@@ -45,6 +71,19 @@ aside {
 aside img {
     width: 200px;
     height: auto;
+}
+
+aside {
+    position: relative;
+    /* makes absolute positioning of h2 relative to aside */
+}
+
+aside h2 {
+    position: absolute;
+    top: 0.5rem;
+    left: 0.5rem;
+    background-color: rgba(255, 255, 255, 0.7);
+    padding: 0.25rem 0.5rem;
 }
 
 /* Paragraph */
