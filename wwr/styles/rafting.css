@@ -36,16 +36,13 @@ a {
 }
 
 /* Hero Section */
-.hero {
-    position: relative;
-    text-align: center;
-    color: white;
-}
-
-.hero img {
-    width: 100%;
-    height: auto;
-    display: block;
+.hero article {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
 }
 
 h1 {
@@ -63,6 +60,7 @@ h2 {
 
 .hero img {
     width: 100%;
+    margin-top: auto;
     display: block;
 }
 
@@ -83,6 +81,7 @@ h2 {
 .hero article img {
     float: right;
     margin-left: 10px;
+    margin-top: auto;
     /* optional spacing */
     width: 150px;
     /* optional sizing */
