@@ -1,11 +1,10 @@
 /* CSS Variables */
 :root {
-    --primary-color: #1e3a8a;
-    --secondary-color: #f97316;
-    --accent-color: #10b981;
-    --background-color: #f3f4f6;
-    --body-font: 'Arial', sans-serif;
-    --text-color: #111827;
+    --primary-color: rgb(30 58 138);
+    --secondary-color: rgb(234 88 12);
+    --accent-color: rgb(5 150 105);
+    --text-color: rgb(17 24 39);
+    --background-color: rgb(243 244 246);
 }
 
 * {
@@ -83,6 +82,11 @@ h2 {
     width: 100%;
     margin-top: auto;
     display: block;
+}
+
+.hero article img {
+    float: right;
+    margin: 0 0 10px 10px;
 }
 
 .hero h1 {
