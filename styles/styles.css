@@ -5,28 +5,41 @@
     box-sizing: border-box;
 }
 
+header,
+footer,
+.grid {
+    max-width: 840px;
+    margin: 0 auto;
+}
+
 /* Navigation bar */
 nav {
-    background-color: #f9f7fa;
-    padding: 10px;
+    display: flex;
+    padding: 1rem;
+    background-color: steelblue;
+    justify-content: space-evenly;
+    align-items: center;
 }
 
 /* Navigation links */
 nav a {
-    color: rgb(39, 18, 231);
-    padding: 10px;
     display: block;
+    padding: 0.5rem;
+    font-size: 1.2rem;
     text-decoration: none;
+    font-weight: 700;
+    color: #fff;
 }
 
 /* Main section */
 main {
-    max-width: 800px;
+    grid-column: 2/3;
+    margin: 1rem;
 }
 
 /* Heading */
 h1 {
-    color: #090a0a;
+    border-bottom: 2px solid #333;
 }
 
 /* Profile image inside main */
@@ -59,12 +72,15 @@ main img {
 
 /* Aside section */
 aside {
-    width: 300px;
-    margin: 20px;
-    border: 1px solid #333;
-    padding: 15px;
-    background-color: #f4f4f4;
-    color: #333;
+    width: 20rem;
+    position: relative;
+    grid-column: 1/2;
+    grid-row: 1/2;
+}
+
+.grid {
+    display: grid;
+    align-items: center;
 }
 
 /* Image inside aside */

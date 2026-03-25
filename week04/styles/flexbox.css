@@ -6,6 +6,8 @@ body {
 .flex-container {
     border: 3px dashed darkcyan;
     background-color: lightyellow;
+    align-items: center;
+    justify-content: center;
     display: flex;
     flex-wrap: wrap;
 }
@@ -20,11 +22,11 @@ body {
 }
 
 .item1 {
-    min-height: 100px;
+    min-height: 300px;
 }
 
 .item2 {
-    min-height: 200px;
+    min-height: 300px;
 }
 
 .item3 {

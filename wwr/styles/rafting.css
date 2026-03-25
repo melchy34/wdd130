@@ -21,7 +21,28 @@ body {
 }
 
 header {
-    background-color: var(--primary-color);
+    display: grid;
+    background-color: #1e3a5f;
+    grid-template-columns: auto 1fr;
+    align-items: center;
+    padding: 10px 20px;
+    color: white;
+}
+
+header img {
+    height: 60px;
+}
+
+nav ul {
+    display: flex;
+    justify-content: flex-end;
+    gap: 20px;
+    list-style: none;
+}
+
+nav a {
+    text-decoration: none;
+    font-weight: bold;
 }
 
 a {
@@ -71,20 +92,47 @@ h2 {
     color: white;
 }
 
-.hero article {
-    position: absolute;
-    bottom: 20px;
-    left: 20px;
-    color: white;
+.adventures {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 10px;
 }
 
-.hero article img {
-    float: right;
-    margin-left: 10px;
-    margin-top: auto;
-    /* optional spacing */
-    width: 150px;
-    /* optional sizing */
+.adventures figure {
+    flex: 1 1 18%;
+    text-align: center;
+}
+
+.adventures img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.history {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    align-items: center;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+}
+
+footer .social {
+    display: flex;
+    gap: 10px;
+    margin-left: auto;
+}
+
+footer .social img {
+    width: 30px;
+    height: 30px;
 }
 
 /* Social Media Nav */
