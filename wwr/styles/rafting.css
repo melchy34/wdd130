@@ -1,10 +1,11 @@
 /* CSS Variables */
 :root {
     --primary-color: #1e3a8a;
-    --secondary-color: #c2410c;
+    --secondary-color: #f97316;
+    /* FIXED */
     --accent-color: #047857;
-    --text-color: #111827;
     --background-color: #f3f4f6;
+    --text-color: #111827;
 }
 
 * {
@@ -66,7 +67,7 @@ a {
 }
 
 h1 {
-    color: var(--primary-color);
+    color: var(--text-color);
     font-size: 24px;
 }
 
