@@ -2,7 +2,6 @@
 :root {
     --primary-color: #1e3a8a;
     --secondary-color: #f97316;
-    /* FIXED */
     --accent-color: #047857;
     --background-color: #f3f4f6;
     --text-color: #111827;
@@ -67,7 +66,7 @@ a {
 }
 
 h1 {
-    color: var(--text-color);
+    color: var(--primary-color);
     font-size: 24px;
 }
 
