@@ -129,20 +129,19 @@ h2 {
     align-items: center;
 }
 
+/* Footer */
 footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 15px;
-}
-
-footer {
     background-color: var(--primary-color);
     color: white;
 }
 
 footer a {
     color: white;
+    text-decoration: none;
 }
 
 footer .social {
@@ -164,4 +163,5 @@ footer .social img {
 .socialmedia img {
     width: 40px;
     height: 40px;
+}
 }
