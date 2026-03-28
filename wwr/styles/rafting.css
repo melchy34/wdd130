@@ -5,12 +5,15 @@
     --accent-color: #047857;
     --background-color: #f3f4f6;
     --text-color: #111827;
+    --body-font: Arial, Helvetica, sans-serif;
+    /* ADD THIS */
 }
 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+header,
+main,
+footer {
+    max-width: 840px;
+    margin: 0 auto;
 }
 
 body {
@@ -20,16 +23,17 @@ body {
 }
 
 header {
-    display: grid;
-    background-color: #1e3a5f;
-    grid-template-columns: auto 1fr;
-    align-items: center;
-    padding: 10px 20px;
+    background-color: var(--primary-color);
     color: white;
 }
 
 header img {
     height: 60px;
+}
+
+nav {
+    display: flex;
+    justify-content: flex-end;
 }
 
 nav ul {
@@ -40,12 +44,11 @@ nav ul {
 }
 
 nav a {
-    text-decoration: none;
-    font-weight: bold;
+    color: white;
 }
 
 a {
-    color: var(--secondary-color);
+    color: var(--primary-color);
 }
 
 /* Logo Styling */
@@ -57,12 +60,11 @@ a {
 
 /* Hero Section */
 .hero article {
-    position: absolute;
-    bottom: 20px;
-    left: 20px;
     display: flex;
     align-items: center;
     gap: 10px;
+    margin: 10px;
+    position: static;
 }
 
 h1 {
@@ -90,10 +92,9 @@ h2 {
 }
 
 .hero h1 {
-    position: absolute;
-    top: 20px;
-    left: 20px;
     color: white;
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 10px;
 }
 
 .adventures {
@@ -126,6 +127,15 @@ footer {
     justify-content: space-between;
     align-items: center;
     padding: 15px;
+}
+
+footer {
+    background-color: var(--primary-color);
+    color: white;
+}
+
+footer a {
+    color: white;
 }
 
 footer .social {
