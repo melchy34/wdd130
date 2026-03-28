@@ -97,8 +97,10 @@ h2 {
     top: 20px;
     left: 20px;
     color: white;
+    /* final color for hero */
+    font-size: 24px;
     background-color: rgba(0, 0, 0, 0.6);
-    /* keeps contrast valid */
+    /* for contrast */
     padding: 10px;
 }
 
