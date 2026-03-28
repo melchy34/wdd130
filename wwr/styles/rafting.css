@@ -9,11 +9,10 @@
     /* ADD THIS */
 }
 
-header,
-main,
-footer {
-    max-width: 840px;
-    margin: 0 auto;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 body {
@@ -48,7 +47,8 @@ nav a {
 }
 
 a {
-    color: var(--primary-color);
+    color: var(--secondary-color);
+    text-decoration: underline;
 }
 
 /* Logo Styling */
@@ -60,11 +60,12 @@ a {
 
 /* Hero Section */
 .hero article {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
     display: flex;
     align-items: center;
     gap: 10px;
-    margin: 10px;
-    position: static;
 }
 
 h1 {
@@ -92,8 +93,12 @@ h2 {
 }
 
 .hero h1 {
+    position: absolute;
+    top: 20px;
+    left: 20px;
     color: white;
     background-color: rgba(0, 0, 0, 0.6);
+    /* keeps contrast valid */
     padding: 10px;
 }
 
