@@ -98,12 +98,14 @@ main h1 {
 /* Company Info */
 .company-info {
     display: flex;
+    align-items: center;
     flex-direction: column;
     gap: 10px;
 }
 
 .company-info iframe {
     width: 100%;
+    text-align: center;
     height: 250px;
     border: 0;
     border-radius: 8px;
