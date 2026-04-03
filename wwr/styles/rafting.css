@@ -6,9 +6,9 @@
     --background-color: #f3f4f6;
     --text-color: #111827;
     --body-font: Arial, Helvetica, sans-serif;
-    /* ADD THIS */
 }
 
+/* Reset */
 * {
     margin: 0;
     padding: 0;
@@ -21,9 +21,10 @@ body {
     color: var(--text-color);
 }
 
+/* Header */
 header {
     background-color: var(--primary-color);
-    color: white;
+    color: var(--text-color);
 }
 
 header img {
@@ -37,15 +38,16 @@ nav {
 
 nav ul {
     display: flex;
-    justify-content: flex-end;
     gap: 20px;
     list-style: none;
 }
 
 nav a {
     color: white;
+    text-decoration: none;
 }
 
+/* Links */
 a {
     color: var(--secondary-color);
     text-decoration: underline;
@@ -59,56 +61,23 @@ a {
 }
 
 /* Hero Section */
-.hero article {
-    position: absolute;
-    bottom: 20px;
-    left: 20px;
-    display: flex;
-    align-items: center;
-    gap: 10px;
-}
-
-h1 {
-    color: var(--primary-color);
-    font-size: 24px;
-}
-
-h2 {
-    color: var(--accent-color);
-}
-
 .hero {
     position: relative;
 }
 
 .hero img {
     width: 100%;
-    margin-top: auto;
     display: block;
-}
-
-.hero article img {
-    float: right;
-    margin: 0 0 10px 10px;
 }
 
 .hero h1 {
     position: absolute;
     top: 20px;
     left: 20px;
-    color: white;
-    /* final color for hero */
     font-size: 24px;
+    color: var(--text-color);
     background-color: rgba(0, 0, 0, 0.6);
-    /* for contrast */
     padding: 10px;
-}
-
-/* Reset */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
 }
 
 /* Main Grid Layout */
@@ -116,13 +85,11 @@ main {
     max-width: 1000px;
     margin: 0 auto;
     padding: 20px;
-
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 20px;
 }
 
-/* Make heading span full width */
 main h1 {
     grid-column: 1 / -1;
     text-align: center;
@@ -139,25 +106,26 @@ main h1 {
 .company-info iframe {
     width: 100%;
     height: 250px;
+    border: 0;
     border-radius: 8px;
 }
 
 /* Employees Section */
 .employees {
     grid-column: 1 / -1;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
 }
 
 .employees h2 {
+    grid-column: 1 / -1;
     margin-bottom: 10px;
 }
 
-/* Flexbox for employee cards */
-.employees {
-    display: flex;
-    flex-direction: column;
-}
-
 .employees figure {
+    flex: 1;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -170,37 +138,17 @@ main h1 {
     border-radius: 50%;
 }
 
-/* Arrange employees in a row */
-.employees {
-    gap: 20px;
-}
-
-.employees figure {
-    flex: 1;
-    display: grid;
-    flex-wrap: wrap;
-}
-
-/* Wrap figures in flex row */
-.employees {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-}
-
 /* Contact Form */
 .contact-form {
     grid-column: 1 / -1;
 }
 
-/* Flexbox for form layout */
 .contact-form form {
     display: flex;
     flex-direction: column;
     gap: 10px;
 }
 
-/* Inputs styling */
 .contact-form input,
 .contact-form textarea,
 .contact-form button {
@@ -208,23 +156,23 @@ main h1 {
     font-size: 1rem;
 }
 
-/* Fieldset styling */
 fieldset {
     padding: 10px;
 }
 
 /* Button */
 button {
-    background: #1e3a8a;
+    background: var(--primary-color);
     color: white;
     border: none;
     cursor: pointer;
 }
 
 button:hover {
-    background: #f97316;
+    background: var(--secondary-color);
 }
 
+/* Adventures Section */
 .adventures {
     display: flex;
     justify-content: space-between;
@@ -243,6 +191,7 @@ button:hover {
     display: block;
 }
 
+/* History Section */
 .history {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -261,27 +210,18 @@ footer {
 }
 
 footer a {
-    color: white;
+    color: var(--text-color);
     text-decoration: none;
 }
 
-footer .social {
+footer .social,
+.socialmedia {
     display: flex;
     gap: 10px;
-    margin-left: auto;
 }
 
-footer .social img {
+footer .social img,
+.socialmedia img {
     width: 30px;
     height: 30px;
-}
-
-/* Social Media Nav */
-.socialmedia a {
-    text-decoration: none;
-}
-
-.socialmedia img {
-    width: 40px;
-    height: 40px;
 }
