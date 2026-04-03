@@ -16,15 +16,17 @@
 }
 
 body {
-    font-family: var(--body-font);
+    color: #111827;
+    /* dark gray on light background (#f3f4f6) */
     background-color: var(--background-color);
-    color: var(--text-color);
 }
 
 /* Header */
 header {
     background-color: var(--primary-color);
-    color: var(--text-color);
+    /* dark blue */
+    color: #ffffff;
+    /* pure white for high contrast */
 }
 
 header img {
@@ -169,7 +171,9 @@ button {
 }
 
 button:hover {
-    background: var(--secondary-color);
+    background-color: #f97316;
+    color: #111827;
+    /* or white if contrast is enough */
 }
 
 /* Adventures Section */
