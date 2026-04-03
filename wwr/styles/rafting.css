@@ -24,9 +24,7 @@ body {
 /* Header */
 header {
     background-color: var(--primary-color);
-    /* dark blue */
     color: #ffffff;
-    /* pure white for high contrast */
 }
 
 header img {
@@ -45,7 +43,7 @@ nav ul {
 }
 
 nav a {
-    color: white;
+    color: #ffffff;
     text-decoration: none;
 }
 
