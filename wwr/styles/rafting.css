@@ -104,6 +104,127 @@ h2 {
     padding: 10px;
 }
 
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Main Grid Layout */
+main {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+/* Make heading span full width */
+main h1 {
+    grid-column: 1 / -1;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+/* Company Info */
+.company-info {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.company-info iframe {
+    width: 100%;
+    height: 250px;
+    border-radius: 8px;
+}
+
+/* Employees Section */
+.employees {
+    grid-column: 1 / -1;
+}
+
+.employees h2 {
+    margin-bottom: 10px;
+}
+
+/* Flexbox for employee cards */
+.employees {
+    display: flex;
+    flex-direction: column;
+}
+
+.employees figure {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.employees img {
+    width: 150px;
+    height: auto;
+    border-radius: 50%;
+}
+
+/* Arrange employees in a row */
+.employees {
+    gap: 20px;
+}
+
+.employees figure {
+    flex: 1;
+    display: grid;
+    flex-wrap: wrap;
+}
+
+/* Wrap figures in flex row */
+.employees {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+/* Contact Form */
+.contact-form {
+    grid-column: 1 / -1;
+}
+
+/* Flexbox for form layout */
+.contact-form form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+/* Inputs styling */
+.contact-form input,
+.contact-form textarea,
+.contact-form button {
+    padding: 10px;
+    font-size: 1rem;
+}
+
+/* Fieldset styling */
+fieldset {
+    padding: 10px;
+}
+
+/* Button */
+button {
+    background: #1e3a8a;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #f97316;
+}
+
 .adventures {
     display: flex;
     justify-content: space-between;
@@ -129,20 +250,19 @@ h2 {
     align-items: center;
 }
 
+/* Footer */
 footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 15px;
-}
-
-footer {
     background-color: var(--primary-color);
     color: white;
 }
 
 footer a {
     color: white;
+    text-decoration: none;
 }
 
 footer .social {
