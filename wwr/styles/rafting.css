@@ -5,7 +5,9 @@
     --accent-color: #047857;
     --background-color: #f3f4f6;
     --text-color: #111827;
-    --body-font: Arial, Helvetica, sans-serif;
+    --text-on-primary: #ffffff;
+    --link-color: #d97706;
+    --link-hover: #b45309;
 }
 
 /* Reset */
@@ -16,15 +18,14 @@
 }
 
 body {
-    color: #111827;
-    /* dark gray on light background (#f3f4f6) */
+    color: var(--text-color);
     background-color: var(--background-color);
 }
 
 /* Header */
 header {
     background-color: var(--primary-color);
-    color: #ffffff;
+    color: var(--text-on-primary);
 }
 
 header img {
@@ -54,8 +55,11 @@ header a {
 }
 
 a {
-    color: #d97706;
-    /* slightly darker orange than #f97316 → contrast >4.5:1 */
+    color: var(--link-color);
+}
+
+a:hover {
+    color: var(--link-hover);
 }
 
 /* Logo Styling */
