@@ -50,6 +50,11 @@ nav a {
 }
 
 /* Links */
+header a {
+    color: #ffffff;
+    /* contrast 10.36:1 ✅ */
+}
+
 a {
     color: #d97706;
     /* slightly darker orange than #f97316 → contrast >4.5:1 */
@@ -73,15 +78,15 @@ a {
 }
 
 .hero h1 {
-    color: var(--text-color);
-    /* dark text */
+    color: #ffffff;
     background-color: rgba(0, 0, 0, 0.6);
-    /* dark overlay for contrast against hero image */
+    padding: 10px;
 }
 
 /* Main Grid Layout */
 main {
     max-width: 1000px;
+    display: flex;
     margin: 0 auto;
     padding: 20px;
     display: grid;
@@ -121,6 +126,7 @@ main h1 {
 }
 
 .employees h2 {
+    text-align: center;
     grid-column: 1 / -1;
     margin-bottom: 10px;
 }
