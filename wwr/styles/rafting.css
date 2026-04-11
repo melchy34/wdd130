@@ -8,6 +8,8 @@
     --text-on-primary: #ffffff;
     --link-color: #d97706;
     --link-hover: #b45309;
+    --white: #ffffff;
+    --light-bg: #e5e7eb;
 }
 
 /* Reset */
@@ -18,18 +20,17 @@
 }
 
 body {
+    font-family: Arial, Helvetica, sans-serif;
     color: var(--text-color);
     background-color: var(--background-color);
+    line-height: 1.6;
 }
 
 /* Header */
 header {
     background-color: var(--primary-color);
     color: var(--text-on-primary);
-}
-
-header img {
-    height: 60px;
+    padding: 15px 20px;
 }
 
 nav {
@@ -44,16 +45,16 @@ nav ul {
 }
 
 nav a {
-    color: #ffffff;
+    color: var(--text-on-primary);
     text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    text-decoration: underline;
 }
 
 /* Links */
-header a {
-    color: #ffffff;
-    /* contrast 10.36:1 ✅ */
-}
-
 a {
     color: var(--link-color);
 }
@@ -62,7 +63,7 @@ a:hover {
     color: var(--link-hover);
 }
 
-/* Logo Styling */
+/* Logo */
 .logo {
     width: 150px;
     display: block;
@@ -72,34 +73,34 @@ a:hover {
 /* Hero Section */
 .hero {
     position: relative;
+    text-align: center;
 }
 
 .hero img {
     width: 100%;
+    height: auto;
     display: block;
 }
 
 .hero h1 {
-    color: #ffffff;
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: var(--white);
     background-color: rgba(0, 0, 0, 0.6);
-    padding: 10px;
+    padding: 10px 20px;
+    border-radius: 5px;
 }
 
 /* Main Grid Layout */
 main {
     max-width: 1000px;
-    display: flex;
     margin: 0 auto;
     padding: 20px;
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
     gap: 20px;
-}
-
-main h1 {
-    grid-column: 1 / -1;
-    text-align: center;
-    margin-bottom: 10px;
 }
 
 /* Company Info */
@@ -112,7 +113,6 @@ main h1 {
 
 .company-info iframe {
     width: 100%;
-    text-align: center;
     height: 250px;
     border: 0;
     border-radius: 8px;
@@ -120,7 +120,6 @@ main h1 {
 
 /* Employees Section */
 .employees {
-    grid-column: 1 / -1;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -128,13 +127,12 @@ main h1 {
 }
 
 .employees h2 {
+    width: 100%;
     text-align: center;
-    grid-column: 1 / -1;
-    margin-bottom: 10px;
 }
 
 .employees figure {
-    flex: 1;
+    flex: 1 1 30%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -148,10 +146,6 @@ main h1 {
 }
 
 /* Contact Form */
-.contact-form {
-    grid-column: 1 / -1;
-}
-
 .contact-form form {
     display: flex;
     flex-direction: column;
@@ -169,17 +163,23 @@ fieldset {
     padding: 10px;
 }
 
-/* Button */
-button {
+/* Buttons */
+button,
+.btn {
     background-color: var(--primary-color);
-    color: #ffffff;
-    /* ensure contrast > 4.5:1 */
+    color: var(--white);
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 5px;
+    text-decoration: none;
+    display: inline-block;
 }
 
-button:hover {
+button:hover,
+.btn:hover {
     background-color: var(--secondary-color);
-    color: #111827;
-    /* or white if contrast >4.5:1 */
+    color: var(--text-color);
 }
 
 /* Adventures Section */
@@ -198,7 +198,6 @@ button:hover {
 .adventures img {
     width: 100%;
     height: auto;
-    display: block;
 }
 
 /* History Section */
@@ -207,10 +206,6 @@ button:hover {
     grid-template-columns: 1fr 1fr;
     gap: 20px;
     align-items: center;
-}
-
-.btn:hover {
-    background-color: #ea580c;
 }
 
 /* Newsletter */
@@ -260,6 +255,11 @@ button:hover {
     padding-bottom: 1rem;
 }
 
+.grid-item img {
+    width: 100%;
+    border-radius: 8px 8px 0 0;
+}
+
 .grid-item h3 {
     margin: 1rem 0 0.5rem;
 }
@@ -269,23 +269,22 @@ footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 15px;
+    padding: 15px 20px;
     background-color: var(--primary-color);
-    color: white;
+    color: var(--white);
 }
 
 footer a {
-    color: #ffffff;
+    color: var(--white);
 }
 
-footer .social,
-.socialmedia {
+/* Social Media Icons */
+.socials {
     display: flex;
     gap: 10px;
 }
 
-footer .social img,
-.socialmedia img {
-    width: auto;
-    height: 80px;
+.socials img {
+    width: 32px;
+    height: 32px;
 }
