@@ -209,6 +209,61 @@ button:hover {
     align-items: center;
 }
 
+.btn:hover {
+    background-color: #ea580c;
+}
+
+/* Newsletter */
+.newsletter {
+    background-color: var(--light-bg);
+    padding: 2rem;
+    text-align: center;
+}
+
+.newsletter form {
+    max-width: 400px;
+    margin: auto;
+    display: grid;
+    gap: 1rem;
+}
+
+.newsletter input,
+.newsletter button {
+    padding: 0.75rem;
+    font-size: 1rem;
+}
+
+.newsletter button {
+    background-color: var(--primary-color);
+    color: var(--white);
+    border: none;
+    cursor: pointer;
+}
+
+.newsletter button:hover {
+    background-color: var(--secondary-color);
+}
+
+/* Grid Layout Section */
+.grid-layout {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    padding: 2rem;
+}
+
+.grid-item {
+    background-color: var(--white);
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    padding-bottom: 1rem;
+}
+
+.grid-item h3 {
+    margin: 1rem 0 0.5rem;
+}
+
 /* Footer */
 footer {
     display: flex;
@@ -231,6 +286,6 @@ footer .social,
 
 footer .social img,
 .socialmedia img {
-    width: 30px;
-    height: 30px;
+    width: auto;
+    height: 80px;
 }
